@@ -72,33 +72,10 @@ public class Snake  extends AppCompatActivity
         score.setText("1");
 
 
-//        Handler handler = new Handler();
-//
-//        loop = new Runnable() {
-//            public void run()
-//            {
-//
-//                if(gameLogic.status)
-//                {
-//                    gameLogic.Game();
-////                gameLogic ;
-//
-//                    score.setText(String.valueOf(gameLogic.zmey.size()));
-//                    drawView.invalidate();
-//
-//                    handler.postDelayed(this, 500);
-//                }
-//
-//
-//
-//
-//            }
-//        };
-//        loop.run();
-       mHandler = new Handler();   // Handler to update UI
-        // This is being created in the main thread
-        // so everything posted will be posted to
-        // the main thread
+
+
+       mHandler = new Handler();
+
 
         mUpdate.start();
     }
@@ -110,16 +87,16 @@ public class Snake  extends AppCompatActivity
             {
 
 
-                // Define the UI change you want to make
+
                 Runnable uiUpdate = new Runnable()
                 {
                     public void run() {
-                        // modify your UI here.
+
 
                         if(gameLogic.status)
                         {
                             gameLogic.Game();
-//                gameLogic ;
+
 
                             score.setText(String.valueOf(gameLogic.zmey.size()));
                             drawView.invalidate();
@@ -137,7 +114,7 @@ public class Snake  extends AppCompatActivity
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                // post the UI change back to the main thread.
+
                 mHandler.post(uiUpdate);
             }
         }
@@ -150,35 +127,12 @@ public class Snake  extends AppCompatActivity
         }
     };
 
-//    @RequiresApi(api = Build.VERSION_CODES.N)
-//    @Override
-//    public void onClick(View action) {
-//
-//        if (action == left) {
-//
-//            gameLogic.checkMoveLeft();
-//            drawView.invalidate();
-//        }
-//        if (action == right) {
-//            gameLogic.checkMoveRight();
-//            drawView.invalidate();
-//        }
-//        if (action == rotateAc) {
-//            gameLogic.checkRotation();
-//            drawView.invalidate();
-//        }
-//    }
+
 
     @Override
     public void onBackPressed() {
 
-        Log.w("","iclosetetris");
-//        SharedPreferences preferences = getSharedPreferences("tetrisCol", MODE_PRIVATE);
-//        SharedPreferences.Editor edit= preferences.edit();
-//
-//
-//        edit.putInt("isFirstRun", e);
-//        edit.commit();
+
         finish();
         return;
 

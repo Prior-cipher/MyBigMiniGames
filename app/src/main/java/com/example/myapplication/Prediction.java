@@ -93,13 +93,7 @@ class Prediction extends View {
                         canvas.drawRect(left + j * 50, yOffset + i * 50 + 2, left+44 + j * 50, yOffset + (i + 1) * 50 - 2, p);
                         break;
                     }
-//                    else {
-//                        int color = Color.YELLOW;
-//
-//                        Paint p = new Paint();
-//                        p.setColor(color);
-//                        canvas.drawRect(left + j * 50, yOffset + i * 50 + 2, left+44 + j * 50, yOffset + (i + 1) * 50 - 2, p);
-//                    }
+
                 }
 
 

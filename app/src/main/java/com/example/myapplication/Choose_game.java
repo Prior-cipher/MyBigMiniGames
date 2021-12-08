@@ -25,8 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Choose_game extends AppCompatActivity
-{
+public class Choose_game extends AppCompatActivity {
 
 
     DrawView drawView;
@@ -39,8 +38,7 @@ public class Choose_game extends AppCompatActivity
     int width;
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getSupportActionBar().hide();
         game = new FrameLayout(this);
@@ -98,35 +96,10 @@ public class Choose_game extends AppCompatActivity
     }
 
 
-//    @RequiresApi(api = Build.VERSION_CODES.N)
-//    @Override
-//    public void onClick(View action) {
-//
-//        if (action == left) {
-//
-//            gameLogic.checkMoveLeft();
-//            drawView.invalidate();
-//        }
-//        if (action == right) {
-//            gameLogic.checkMoveRight();
-//            drawView.invalidate();
-//        }
-//        if (action == rotateAc) {
-//            gameLogic.checkRotation();
-//            drawView.invalidate();
-//        }
-//    }
-
     @Override
     public void onBackPressed() {
 
-        Log.w("","iclosetetris");
-//        SharedPreferences preferences = getSharedPreferences("tetrisCol", MODE_PRIVATE);
-//        SharedPreferences.Editor edit= preferences.edit();
-//
-//
-//        edit.putInt("isFirstRun", e);
-//        edit.commit();
+
         finish();
         return;
 
@@ -138,8 +111,7 @@ public class Choose_game extends AppCompatActivity
         int x = (int) event.getX();
         int y = (int) event.getY();
 
-        if (event.getAction() == MotionEvent.ACTION_DOWN)
-        {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
             if (x < width / 3) {
                 gameLogic.checkMoveLeft();
                 drawView.invalidate();

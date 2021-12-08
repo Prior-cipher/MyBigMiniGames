@@ -25,7 +25,7 @@ class DrawView extends View
         p.setStrokeWidth(5f);
         boundary(canvas);
         grid(canvas);
-//        Coordinate[ ] test={new Coordinate(12,12),new Coordinate(12,13),new Coordinate(13,12),new Coordinate(13,13)};
+
         drawBriks(canvas);
         drawBrick(canvas);
 

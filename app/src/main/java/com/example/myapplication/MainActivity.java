@@ -79,19 +79,7 @@ public class MainActivity extends AppCompatActivity
         }
     });
 
-//    ImageView b=findViewById(R.id.b);
-//        RelativeLayout r=findViewById(R.id.stroka);
-//
-//        b.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View v)
-//            {
-//
-//                r.setMinimumHeight(800);
-//
-//            }
-//        });
+
         Button snake;
         snake= findViewById(R.id.snake);
         snake.setOnClickListener(new View.OnClickListener()
