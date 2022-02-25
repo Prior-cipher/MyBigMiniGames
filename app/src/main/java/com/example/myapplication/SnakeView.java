@@ -24,6 +24,7 @@ public class SnakeView extends View
 
 
 
+
     @Override
     protected void onDraw(Canvas canvas) {
         p.setColor(Color.GRAY);

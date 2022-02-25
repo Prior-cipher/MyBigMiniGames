@@ -5,6 +5,7 @@ public class Coordinate {
     Coordinate(int y, int x) {
         this.y = y;
         this.x = x;
+
     }
 
     static Coordinate add(Coordinate A, Coordinate B) {

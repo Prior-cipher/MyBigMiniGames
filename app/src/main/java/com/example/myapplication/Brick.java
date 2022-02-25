@@ -50,6 +50,7 @@ public class Brick {
 
             case LINE:
                 this.coordinates = new Coordinate[]{
+
                         new Coordinate(1, 10),
                         new Coordinate(0, 10),
 

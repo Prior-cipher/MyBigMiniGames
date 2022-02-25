@@ -63,6 +63,7 @@ ballY=height/2;
         }
         else if(ballY<0)
         {
+
             ballX=500;
             ballY=height/2;
             ballXxpeed=0;

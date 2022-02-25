@@ -77,6 +77,8 @@ public class Choose_game extends AppCompatActivity {
 
         Handler handler = new Handler();
 
+
+
         loop = new Runnable() {
             public void run() {
 

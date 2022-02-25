@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
         Button play= findViewById(R.id.button);
         ImageView play2= findViewById(R.id.tetrisimg);
 

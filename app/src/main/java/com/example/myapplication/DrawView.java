@@ -32,6 +32,7 @@ class DrawView extends View
 
     }
 
+
     private void grid(Canvas canvas) {
         p.setStrokeWidth(2f);
         for (int i = 90; i < 1040; i = i + 50) {

@@ -55,6 +55,7 @@ public class SnakeLogic
         {
             if (zmey.get(i)[0] == y && zmey.get(i)[1] == x)
             {
+
                 return true;
             }
         }

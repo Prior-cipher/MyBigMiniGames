@@ -144,6 +144,7 @@ public class Snake  extends AppCompatActivity
         int x = (int) event.getX();
         int y = (int) event.getY();
 
+
         if (event.getAction() == MotionEvent.ACTION_DOWN)
         {
             if (x < width / 2) {

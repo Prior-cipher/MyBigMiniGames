@@ -64,6 +64,7 @@ class Prediction extends View {
                         new Coordinate(0, 12)
                 };
 
+
                 break;
 
             case LINE:
