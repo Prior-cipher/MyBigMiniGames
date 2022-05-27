@@ -1,36 +1,24 @@
 package com.example.myapplication;
 
-import androidx.activity.result.ActivityResultCallback;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-
-import android.util.Log;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.WebSocket;
+import okhttp3.WebSocketListener;
+import okio.ByteString;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCaller;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContract;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity
 {
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,6 +28,11 @@ public class MainActivity extends AppCompatActivity
 
         Button play= findViewById(R.id.button);
         ImageView play2= findViewById(R.id.tetrisimg);
+        WebSocket ws ;
+        MyThread myThread= new MyThread();
+        myThread.run();
+        ws=myThread.ws;
+
 
         play2.setOnClickListener(new View.OnClickListener()
         {
@@ -110,5 +103,19 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+        Button missiImg;
+        missiImg= findViewById(R.id.missing);
+        missiImg.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(MainActivity.this, BreaakerAppActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -34,6 +34,13 @@
             android:theme="@style/generalnotitle"
             android:screenOrientation="portrait"
             ></activity>
+        <activity android:name=".BreaakerAppActivity"
+
+                android:screenOrientation="portrait"
+
+
+
+        ></activity>
     </application>
 
 </manifest>

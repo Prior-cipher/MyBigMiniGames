@@ -183,9 +183,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_centerInParent="true"
-                    android:scaleX="1"
+                    android:scaleX="1.3"
                     android:scaleY="1"
-                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                    app:srcCompat="@drawable/lg" />
 
                 <Button
                     android:id="@+id/missing"
@@ -196,7 +196,7 @@
 
                     android:layout_height="40dp"
 
-                    android:text="PlaceHolder"
+                    android:text="Arcanoid"
                     android:textColor="@android:color/black" />
 
             </LinearLayout>
@@ -217,9 +217,10 @@
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="100"
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@drawable/pngwid"
+                tools:srcCompat="@drawable/pngwid" />
 
         </TableRow>
 
