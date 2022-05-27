@@ -128,7 +128,13 @@ public class SnakeLogic
             h = setFood();
 
         } else
+
             {
+                if (pred[0] < 0 || pred[0] > 20 || pred[1] < 0 || pred[1] > 20 )
+                {
+                    status=false;
+                    return;
+                }
 
 
             for (int index = zmey.size() - 1; index > 0; index--)
