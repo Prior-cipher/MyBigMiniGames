@@ -4,7 +4,6 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class SnakeLogic
 {
@@ -33,7 +32,7 @@ public class SnakeLogic
 
 
 
-    int[] setHavka()
+    int[] setFood()
     {
 
         int x = getRndInteger(0, 19);
@@ -94,7 +93,7 @@ public class SnakeLogic
 
         if (!stat)
         {
-            h = setHavka();
+            h = setFood();
 
             stat = true;
 
@@ -122,12 +121,12 @@ public class SnakeLogic
 
         if (pred[0] ==  h[0] &&pred[1] ==  h[1])
         {
-            Log.w("","havaem");
+
 
             zmey.add(0,h);
 
-            h = setHavka();
-            Log.w(" ",h[0]+""+h[1]);
+            h = setFood();
+
         } else
             {
 
